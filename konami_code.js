@@ -15,6 +15,5 @@ function init() {
   const body = document.querySelector( 'body' )
   body.addEventListener( 'keydown', event => {
     console.log( event.key )
-    console.log( event.code )
   })
 }
