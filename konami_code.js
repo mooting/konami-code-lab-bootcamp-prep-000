@@ -15,8 +15,8 @@ function init() {
   const body = document.querySelector( 'body' )
   codeIndex = 0
   body.addEventListener( 'keydown', function( event ) {
-    console.log( `key: ${ event.code } ${ codeIndex }`)
-    if( codes[codeIndex] === event.code ){
+    console.log( `key: ${ event.key } ${ codeIndex }`)
+    if( codes[codeIndex] === event.key ){
       if( codeIndex === codes.length - 1 ){
         codeIndex = 0
         alert('Hurray!')
