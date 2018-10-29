@@ -10,11 +10,11 @@ const codes = [
   "b",
   "a"
 ];
-var codeIndex = 0
+
 function init() {
   const body = document.querySelector( 'body' )
-  
-  body.addEventListener( 'keydown', event => {
+  codeIndex = 0
+  body.addEventListener( 'keydown', function( event ) {
     if( codes[codeIndex] === event.code ){
 
       if( codeIndex === codes.length - 1 ){
